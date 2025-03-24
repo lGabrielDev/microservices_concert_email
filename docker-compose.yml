@@ -1,0 +1,58 @@
+version: '3.8'
+
+
+networks:
+  network_teste_insano:
+    driver: bridge
+
+
+volumes:
+    volume_postgres:
+
+services:
+  microservice-email:
+    build:
+      context: ./microservice_emails
+    container_name: microservice_email_container
+    environment:
+      - spring.mail.host=smtp.gmail.com
+      - spring.mail.port=587
+      - spring.mail.username=${gmail_email}
+      - spring.mail.password=${gmail_password}
+      - spring.mail.properties.mail.smtp.auth=true
+      - spring.mail.properties.mail.smtp.starttls.enable=true
+    ports:
+      - "8081:8081"
+    networks:
+      - network_teste_insano
+
+
+  postgres:
+    image: postgres:15
+    container_name: postgres_container
+    environment:
+      - POSTGRES_DB=${PG_DATABASE}
+      - POSTGRES_USER=${PG_USER}
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
+    ports:
+      - "5432:5432"
+    networks:
+      - network_teste_insano
+    volumes:
+     - volume_postgres:/var/lib/postgresql/data
+
+  microservice_concert:
+    build:
+      context: ./microservice_concerts
+    container_name: microservice_concert_container
+    environment:
+      - spring.datasource.url=jdbc:postgresql://postgres:5432/${PG_DATABASE}
+      - spring.datasource.username=${PG_USER}
+      - spring.datasource.password=${PG_PASSWORD}
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - microservice-email
+    networks:
+      - network_teste_insano

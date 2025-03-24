@@ -1,0 +1,11 @@
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/DTOs/ConcertWithoutParticipantsInfoDto.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/DTOs/EmailDto.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/DTOs/TicketFullDto.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/EmailController.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/EmailService.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/MicroserviceEmailsApplication.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/errors/DefaultErrorDto.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/errors/FileDoesNotExistsException.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/files/CheckFiles.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/files/HtmlHandle.java
+/mnt/c/Users/leekbiel/Desktop/microservices_insanos/microservice_emails/src/main/java/com/lgabrieldev/microservice_emails/swagger/SwaggerConfig.java

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="padding: 0px; margin: 0px; font-family: 'JetBrains Mono'; font-size: 22px;">
+
+    <div id="container" align="center" style="height: 860px; width: 600px; border: 3px solid #000000; padding: 10px;">
+        
+        <!-- Header -->
+        <div id="header" style="background-color: #ffffff;">
+            <img id="check_image" src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678134-sign-check-256.png" alt="" style="width: 77.36px; height: 77.37px; margin-top: 20px;">
+            <h1 id="congrats" style="font-size: 30px; margin-top: 20px; margin-bottom: 23px;">Congratulations</h1>
+            <h1 id="subtitle" style="font-size: 16px; margin-bottom: 50px;">Ticket confirmed, see you at the event!</h1>
+        </div>
+
+        <!-- Ticket Info -->
+        <div id="ticket_info_container" style="background-color: #E5E7EF; height: fit-content; width: 97%; padding-top: 15px; margin-bottom: 30px;">
+            <h1 id="ticket_title" style="font-size: 18px;">TICKET INFO:</h1>
+            <table id="table" align="center" style="width: 98%; height: 87%; padding: 20px 30px; margin-top: 15px; border-collapse: separate; border-spacing: 20px;">
+                <tr>
+                    <td class="td_title" style="font-size: 17px; font-weight: bold; text-align: start;">ID:</td>
+                    <td style="font-size: 16px; text-align: end;">${id}</td>
+                </tr>
+                <tr>
+                    <td class="td_title" style="font-size: 17px; font-weight: bold; text-align: start;">Email:</td>
+                    <td style="font-size: 16px; text-align: end;">${email}</td>
+                </tr>
+                <tr>
+                    <td class="td_title" style="font-size: 17px; font-weight: bold; text-align: start;">Show title:</td>
+                    <td style="font-size: 16px; text-align: end;">${show_title}</td>
+                </tr>
+                <tr>
+                    <td class="td_title" style="font-size: 17px; font-weight: bold; text-align: start;">Description:</td>
+                    <td style="font-size: 16px; text-align: end;">${show_description}</td>
+                </tr>
+                <tr>
+                    <td class="td_title" style="font-size: 17px; font-weight: bold; text-align: start;">City:</td>
+                    <td style="font-size: 16px; text-align: end;">${city}</td>
+                </tr>
+                <tr>
+                    <td class="td_title" style="font-size: 17px; font-weight: bold; text-align: start;">Date:</td>
+                    <td style="font-size: 16px; text-align: end;">${date}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- PDF -->
+        <div id="pdf-info-container" style="background-color: #ffffff; font-size: 16px; margin-bottom: 30px;">
+            Your ticket is available in the PDF file below
+        </div>
+        
+        <!-- Contact -->
+        <div id="contact-container" style="background-color: #000000; height: 93px; margin: 0px; padding-bottom: 4px; width: 97%;">
+            <h1 id="contact_title" style="color: #3174CF; font-size: 17px; padding-top: 9px; margin-bottom: 15px;">Contact</h1>
+            <div id="contact_icons">
+                <a href="https://www.linkedin.com/in/lgabrieldev/" target="_blank"><img class="contact_icon icon" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="" style="width: 40px; height: 40px;"></a>
+                <a href="https://github.com/lGabrielDev" target="_self"><img class="contact_icon icon" src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" alt="" style="width: 40px; height: 40px;"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
