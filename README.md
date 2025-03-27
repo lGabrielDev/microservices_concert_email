@@ -9,7 +9,7 @@
 <div align="left">
     <img src="https://img.shields.io/badge/license-MIT-yellow" alt="badge icon"></img>
     <img src="https://img.shields.io/badge/version-1.0-green" alt="badge icon"></img>
-    <img src="https://img.shields.io/badge/repo size-ALTERAR DEPOIS MB-orange" alt="badge icon"></img>
+    <img src="https://img.shields.io/badge/repo size-199 MB-orange" alt="badge icon"></img>
 </div>
 
 <br>
