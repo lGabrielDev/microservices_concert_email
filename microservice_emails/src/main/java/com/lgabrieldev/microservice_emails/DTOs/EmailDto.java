@@ -23,7 +23,7 @@ public class EmailDto {
     private String SUBJECT = "title zica tal";
 
     private String HTML_TEMPLATE_PATH = "/app/templates/ticketTemplate.html";
-    private String PDF_PATH = "/app/templates/ticketTemplate.html";
+    private String PDF_PATH = "/app/templates/ticketTemplate.html"; //alterar o nome do arquivo..... deve ser 'arquivoTal.pdf'. A extenção do arquivo está errada!
 
     private String body;
 
